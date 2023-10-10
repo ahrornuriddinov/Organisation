@@ -1,0 +1,20 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/organisation
+    username: postgres
+    password: 2611
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+springdoc:
+  #  api-docs:
+  #    path: /api-docs
+  swagger-ui:
+    tags-sorter: alphabetically
+    path: /swagger-ui.html
